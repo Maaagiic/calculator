@@ -19,11 +19,11 @@
         <Button Content="9" HorizontalAlignment="Left" Height="44" Margin="203,288,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_8"/>
         <Button Content="0&#xD;&#xA;" HorizontalAlignment="Left" Height="44" Margin="135,337,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_9"/>
         <TextBox x:Name="TextBox1" Margin="10,48,-20,0" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Top" Height="41" Width="678" FontSize="19"/>
-        <Button  Content="с" HorizontalAlignment="Left" Height="44" Margin="67,104,0,0" VerticalAlignment="Top" Width="63" FontSize="36"/>
+        <Button  Content="с" HorizontalAlignment="Left" Height="44" Margin="67,104,0,0" VerticalAlignment="Top" Width="63" FontSize="36" Click="Button_Click_15"/>
         <Button Content="-1" HorizontalAlignment="Left" Height="44" Margin="135,104,0,0" VerticalAlignment="Top" Width="63"/>
         <Button Content="+" HorizontalAlignment="Left" Height="44" Margin="313,190,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_10"/>
         <Button Content="-" HorizontalAlignment="Left" Height="44" Margin="381,190,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_11"/>
-        <Button Content="," HorizontalAlignment="Left" Height="44" Margin="381,288,0,0" VerticalAlignment="Top" Width="63"/>
+        <Button Content="," HorizontalAlignment="Left" Height="44" Margin="381,288,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_16"/>
         <Button Content="x^y" HorizontalAlignment="Left" Height="44" Margin="381,337,0,0" VerticalAlignment="Top" Width="63"/>
         <Button Content="=" HorizontalAlignment="Left" Height="93" Margin="313,288,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_14"/>
         <Button Content="*" HorizontalAlignment="Left" Height="44" Margin="313,239,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_12"/>

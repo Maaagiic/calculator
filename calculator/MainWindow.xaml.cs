@@ -29,77 +29,116 @@ namespace calculator
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            TextBox1.Text = "1";
+            TextBox1.Text += "1";
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            TextBox1.Text = "2";
+            TextBox1.Text += "2";
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            TextBox1.Text = "3";
+            TextBox1.Text += "3";
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            TextBox1.Text = "4";
+            TextBox1.Text += "4";
         }
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
-            TextBox1.Text = "5";
+            TextBox1.Text += "5";
         }
 
         private void Button_Click_5(object sender, RoutedEventArgs e)
         {
-            TextBox1.Text = "6";
+            TextBox1.Text += "6";
         }
 
         private void Button_Click_6(object sender, RoutedEventArgs e)
         {
-            TextBox1.Text = "7";
+            TextBox1.Text += "7";
         }
 
         private void Button_Click_7(object sender, RoutedEventArgs e)
         {
-            TextBox1.Text = "8";
+            TextBox1.Text += "8";
         }
 
         private void Button_Click_8(object sender, RoutedEventArgs e)
         {
-            TextBox1.Text = "9";
+            TextBox1.Text += "9";
         }
 
         private void Button_Click_9(object sender, RoutedEventArgs e)
         {
-            TextBox1.Text = "0";
+            TextBox1.Text += "0";
         }
 
         private void Button_Click_10(object sender, RoutedEventArgs e)
         {
-
+            x = Convert.ToDouble(TextBox1.Text);
+            c = '+';
+            TextBox1.Text = "";
         }
 
         private void Button_Click_11(object sender, RoutedEventArgs e)
         {
-
+            x = Convert.ToDouble(TextBox1.Text);
+            c = '-';
+            TextBox1.Text = "";
         }
 
         private void Button_Click_12(object sender, RoutedEventArgs e)
         {
-
+            x = Convert.ToDouble(TextBox1.Text);
+            c = '*';
+            TextBox1.Text = "";
         }
 
         private void Button_Click_13(object sender, RoutedEventArgs e)
         {
-
+            x = Convert.ToDouble(TextBox1.Text);
+            c = '/';
+            TextBox1.Text = "";
         }
 
         private void Button_Click_14(object sender, RoutedEventArgs e)
         {
+            y = Convert.ToDouble(TextBox1.Text);
+            TextBox1.Text = "";
+            switch (c)
+            {
+                case '+':
+                    TextBox1.Text = Convert.ToString(x + y);
+                    break;
+                case '-':
+                    TextBox1.Text = Convert.ToString(x - y);
+                    break;
+                case '/':
+                    TextBox1.Text = Convert.ToString(x / y);
+                    break;
+                case '*':
+                    TextBox1.Text = Convert.ToString(x * y);
+                    break;
+                    
 
+                    
+            }
+
+
+        }
+
+        private void Button_Click_15(object sender, RoutedEventArgs e)
+        {
+            TextBox1.Text = "";
+        }
+
+        private void Button_Click_16(object sender, RoutedEventArgs e)
+        {
+            TextBox1.Text += ",";
         }
     }
 }
