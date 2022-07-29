@@ -1,21 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace calculator
 {
-    
+
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -123,9 +111,9 @@ namespace calculator
                 case '*':
                     TextBox1.Text = Convert.ToString(x * y);
                     break;
-                    
 
-                    
+
+
             }
 
 
@@ -134,11 +122,62 @@ namespace calculator
         private void Button_Click_15(object sender, RoutedEventArgs e)
         {
             TextBox1.Text = "";
+            x = 0;
+            y = 0;
         }
 
         private void Button_Click_16(object sender, RoutedEventArgs e)
         {
             TextBox1.Text += ",";
+        }
+
+        private void Button_Click_17(object sender, RoutedEventArgs e)
+        {
+            x = Convert.ToDouble(TextBox1.Text);
+            TextBox1.Text = Convert.ToString(Math.Pow(x, 2));
+        }
+
+        private void Button_Click_18(object sender, RoutedEventArgs e)
+        {
+            x = Convert.ToDouble(TextBox1.Text);
+            TextBox1.Text = Convert.ToString(Math.Sqrt(x));
+        }
+
+        private void Button_Click_19(object sender, RoutedEventArgs e)
+        {
+            x = Convert.ToDouble(TextBox1.Text);
+            TextBox1.Text = Convert.ToString(Math.Sin((x * Math.PI) / 180));
+        }
+
+        private void Button_Click_20(object sender, RoutedEventArgs e)
+        {
+            x = Convert.ToDouble(TextBox1.Text);
+            TextBox1.Text = Convert.ToString(Math.Cos((x * Math.PI) / 180));
+        }
+
+        private void Button_Click_21(object sender, RoutedEventArgs e)
+        {
+            x = Convert.ToDouble(TextBox1.Text);
+            TextBox1.Text = Convert.ToString(Math.Tan((x * Math.PI) / 180));
+        }
+
+        private void Button_Click_22(object sender, RoutedEventArgs e)
+        {
+            x = Convert.ToDouble(TextBox1.Text);
+            TextBox1.Text = Convert.ToString((Math.Cos((x * Math.PI) / 180)) / Math.Sin((x * Math.PI) / 180));
+        }
+
+        private void Button_Click_23(object sender, RoutedEventArgs e)
+        {
+            string s = TextBox1.Text;
+            s = s.Substring(0, s.Length - 1);
+            TextBox1.Text = s;
+
+        }
+
+        private void Button_ImageFailed(object sender, ExceptionRoutedEventArgs e)
+        {
+
         }
     }
 }
