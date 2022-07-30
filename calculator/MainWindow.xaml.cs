@@ -144,7 +144,7 @@ namespace calculator
                     case '/':
                         if (y == 0)
                         {
-                            MessageBox.Show("На ноль делить нельзя!", "Error", MessageBoxButton.OK);
+                            MessageBox.Show("На ноль делить нельзя!", "Error", MessageBoxButton.OK, MessageBoxImage.Asterisk);
                         }
                         else
                         {
@@ -161,7 +161,7 @@ namespace calculator
             catch (Exception)
             {
 
-                MessageBox.Show("Введите выражение", "Information", MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show("Введите выражение", "Information", MessageBoxButton.OK, MessageBoxImage.Asterisk);
             }
 
 
@@ -184,20 +184,7 @@ namespace calculator
             TextBox1.Text += ",";
         }
 
-        private void Button_Click_17(object sender, RoutedEventArgs e)
-        {
-            try
-            {
-                x = Convert.ToDouble(TextBox1.Text);
-                TextBox1.Text = Convert.ToString(Math.Pow(x, 2));
-            }
-            catch (Exception)
-            {
-
-                MessageBox.Show("Введите значение для вычисления", "Information", MessageBoxButton.OK, MessageBoxImage.Information);
-            }
-
-        }
+      
 
         private void Button_Click_18(object sender, RoutedEventArgs e)
         {
@@ -292,6 +279,30 @@ namespace calculator
 
         }
 
+        private void TextBox1_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        {
+         
+        }
 
+        private void Button_Click_24(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_25(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_26(object sender, RoutedEventArgs e)
+        {
+
+            
+        }
+
+        private void Button_Click_17(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

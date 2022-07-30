@@ -5,46 +5,57 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:calculator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="460.597" Width="694.596" FontFamily="Times New Roman
-        " FontSize="18" Background="LightPink">
-    <Grid Margin="0,0,51,37">
-        <Button Content="1" HorizontalAlignment="Left" Height="44" Margin="67,190,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click"/>
-        <Button Content="2" HorizontalAlignment="Left" Height="44" Margin="135,190,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_1"/>
-        <Button Content="3" HorizontalAlignment="Left" Height="44" Margin="203,190,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_2"/>
-        <Button Content="4" HorizontalAlignment="Left" Height="44" Margin="67,239,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_3"/>
-        <Button Content="5" HorizontalAlignment="Left" Height="44" Margin="135,239,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_4"/>
-        <Button Content="6" HorizontalAlignment="Left" Height="44" Margin="203,239,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_5"/>
-        <Button Content="7" HorizontalAlignment="Left" Height="44" Margin="67,288,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_6"/>
-        <Button Content="8" HorizontalAlignment="Left" Height="44" Margin="135,288,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_7"/>
-        <Button Content="9" HorizontalAlignment="Left" Height="44" Margin="203,288,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_8"/>
-        <Button Content="0" HorizontalAlignment="Left" Height="44" Margin="67,337,0,0" VerticalAlignment="Top" Width="103" Click="Button_Click_9"/>
-        <TextBox Name="TextBox1" Margin="16,48,0,0" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Top" Height="41" Width="620" FontSize="19"/>
-        <Button  Content="с" HorizontalAlignment="Left" Height="44" Margin="67,104,0,0" VerticalAlignment="Top" Width="63" FontSize="36" Click="Button_Click_15"></Button>
-        <Button HorizontalAlignment="Left" Height="44" Margin="135,104,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_23">
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        
+        Title="Calculator" Height="460.597" Width="580.596" FontFamily="Times New Roman
+        " FontSize="18" 
+        Background="#F5B49F" MinHeight="460.597" MinWidth="580.596" MaxHeight="460.597" MaxWidth="580.596" >
+    <Grid Margin="1,0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="571" Height="430" >
+
+        <Button Content="1" HorizontalAlignment="Left" Height="44" Margin="45,184,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click"/>
+        <Button Content="2" HorizontalAlignment="Left" Height="44" Margin="113,184,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_1"/>
+        <Button Content="3" HorizontalAlignment="Left" Height="44" Margin="181,184,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_2"/>
+        <Button Content="4" HorizontalAlignment="Left" Height="44" Margin="45,233,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_3"/>
+        <Button Content="5" HorizontalAlignment="Left" Height="44" Margin="113,233,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_4"/>
+        <Button Content="6" HorizontalAlignment="Left" Height="44" Margin="181,233,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_5"/>
+        <Button Content="7" HorizontalAlignment="Left" Height="44" Margin="45,282,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_6"/>
+        <Button Content="8" HorizontalAlignment="Left" Height="44" Margin="113,282,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_7"/>
+        <Button Content="9" HorizontalAlignment="Left" Height="44" Margin="181,282,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_8"/>
+        <Button Content="0" HorizontalAlignment="Left" Height="44" Margin="45,331,0,0" VerticalAlignment="Top" Width="103" Click="Button_Click_9"/>
+        <TextBox  FontWeight="Bold" Background="#C9B0D4" Padding="10,3" BorderBrush="PeachPuff"  BorderThickness="4"
+            Name="TextBox1" Margin="45,42,167,0" TextWrapping="WrapWithOverflow" HorizontalAlignment="Center" VerticalAlignment="Top" Height="41" Width="359" FontSize="19" TextChanged="TextBox1_TextChanged"/>
+        <Button  Content="с" HorizontalAlignment="Left" Height="44" Margin="45,98,0,0" VerticalAlignment="Top" Width="63" FontSize="36" Click="Button_Click_15"></Button>
+        <Button HorizontalAlignment="Left" Height="44" Margin="113,98,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_23">
             <Grid>
                 <Image Source="/picture/back.ico" />
 
             </Grid>
         </Button>
-        <Button Content="+" HorizontalAlignment="Left" Height="44" Margin="295,190,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_10"/>
-        <Button Content="-" HorizontalAlignment="Left" Height="44" Margin="363,190,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_11"/>
-        <Button Content="," HorizontalAlignment="Left" Height="44" Margin="175,337,0,0" VerticalAlignment="Top" Width="91" Click="Button_Click_16"/>
+        <Button Content="+" HorizontalAlignment="Left" Height="44" Margin="273,184,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_10"/>
+        <Button Content="-" HorizontalAlignment="Left" Height="44" Margin="341,184,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_11"/>
+        <Button Content="," HorizontalAlignment="Left" Height="44" Margin="153,331,0,0" VerticalAlignment="Top" Width="91" Click="Button_Click_16"/>
         <Button 
-            HorizontalAlignment="Left" Height="44" Margin="363,337,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_17">
+            HorizontalAlignment="Left" Height="44" Margin="341,331,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_17">
             <Image Source="/picture/pngwing.com.png" Height="23"/>
 
         </Button>
-        <Button Content="=" HorizontalAlignment="Left" Height="93" Margin="295,288,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_14"/>
-        <Button Content="*" HorizontalAlignment="Left" Height="44" Margin="295,239,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_12"/>
-        <Button Content="/" HorizontalAlignment="Left" Height="44" Margin="363,239,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_13"/>
-        <Button Content="tan" HorizontalAlignment="Left" Height="44" Margin="451,288,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_21"/>
-        <Button Content="sin" HorizontalAlignment="Left" Height="44" Margin="451,239,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_19"/>
-        <Button Content="ctan" HorizontalAlignment="Left" Height="44" Margin="519,288,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_22"/>
-        <Button Content="cos" HorizontalAlignment="Left" Height="44" Margin="519,239,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_20"/>
-        <Button  HorizontalAlignment="Left" Height="44" Margin="363,288,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_18">
+        <Button Content="=" HorizontalAlignment="Left" Height="93" Margin="273,282,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_14"/>
+        <Button Content="*" HorizontalAlignment="Left" Height="44" Margin="273,233,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_12"/>
+        <Button Content="/" HorizontalAlignment="Left" Height="44" Margin="341,233,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_13"/>
+        <Button Content="tan" HorizontalAlignment="Left" Height="44" Margin="411,282,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_21"/>
+        <Button Content="sin" HorizontalAlignment="Left" Height="44" Margin="411,233,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_19"/>
+        <Button Content="ctan" HorizontalAlignment="Left" Height="44" Margin="479,282,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_22"/>
+        <Button Content="cos" HorizontalAlignment="Left" Height="44" Margin="479,233,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_20"/>
+        <Button  HorizontalAlignment="Left" Height="44" Margin="341,282,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_18">
             <Image Source="/picture/klipartz.com.png" />
+        </Button>
+        <Button   HorizontalAlignment="Left" Margin="518,394,0,0" VerticalAlignment="Top" Width="36" Height="28" FontSize="13" Padding="2">
+            <Image Source="/picture/pngwing.com-_1_.ico" />
 
         </Button>
+
     </Grid>
+
+
 </Window>
 
