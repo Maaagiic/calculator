@@ -304,5 +304,11 @@ namespace calculator
         {
 
         }
+
+        private void Button_Click_27(object sender, RoutedEventArgs e)
+        {
+
+            Application.Current.Shutdown();
+        }
     }
 }

@@ -49,7 +49,7 @@
         <Button  HorizontalAlignment="Left" Height="44" Margin="341,282,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_18">
             <Image Source="/picture/klipartz.com.png" />
         </Button>
-        <Button   HorizontalAlignment="Left" Margin="518,394,0,0" VerticalAlignment="Top" Width="36" Height="28" FontSize="13" Padding="2">
+        <Button   HorizontalAlignment="Left" Margin="518,394,0,0" VerticalAlignment="Top" Width="36" Height="28" FontSize="13" Padding="2" Click="Button_Click_27">
             <Image Source="/picture/pngwing.com-_1_.ico" />
 
         </Button>
