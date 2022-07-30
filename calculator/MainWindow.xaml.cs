@@ -113,7 +113,7 @@ namespace calculator
         private void Button_Click_13(object sender, RoutedEventArgs e)
         {
 
-            {
+            
                 try
                 {
                     x = Convert.ToDouble(TextBox1.Text);
@@ -121,15 +121,10 @@ namespace calculator
                     TextBox1.Text = "";
                 }
                 catch (Exception)
-                
+            { 
+
                     MessageBox.Show("Введите число", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
-
-            }
-
-
-
-
         }
 
         private void Button_Click_14(object sender, RoutedEventArgs e)
