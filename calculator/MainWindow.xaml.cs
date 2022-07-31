@@ -76,7 +76,6 @@ namespace calculator
             catch (Exception)
             {
                 MessageBox.Show("Введите число", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-
             }
         }
 
@@ -91,7 +90,6 @@ namespace calculator
             catch (Exception)
             {
                 MessageBox.Show("Введите число", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-
             }
         }
 
@@ -106,14 +104,12 @@ namespace calculator
             catch (Exception)
             {
                 MessageBox.Show("Введите число", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-
             }
         }
 
         private void Button_Click_13(object sender, RoutedEventArgs e)
         {
 
-            
                 try
                 {
                     x = Convert.ToDouble(TextBox1.Text);
@@ -122,7 +118,6 @@ namespace calculator
                 }
                 catch (Exception)
             { 
-
                     MessageBox.Show("Введите число", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
         }
@@ -145,7 +140,12 @@ namespace calculator
                         if (y == 0)
                         {
                             MessageBox.Show("На ноль делить нельзя!", "Error", MessageBoxButton.OK, MessageBoxImage.Asterisk);
+
                         }
+                        if (x == 0)
+                        {
+                            MessageBox.Show("Не думаю что в этом есть смысл", "Error", MessageBoxButton.OK, MessageBoxImage.Asterisk);
+                        }    
                         else
                         {
                             TextBox1.Text = Convert.ToString(x / y);
@@ -284,31 +284,29 @@ namespace calculator
          
         }
 
-        private void Button_Click_24(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Button_Click_25(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Button_Click_26(object sender, RoutedEventArgs e)
-        {
-
-            
-        }
-
-        private void Button_Click_17(object sender, RoutedEventArgs e)
-        {
-
-        }
+      
 
         private void Button_Click_27(object sender, RoutedEventArgs e)
         {
 
             Application.Current.Shutdown();
+        }
+
+       
+
+        private void Button_Click_24(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                x = Convert.ToDouble(TextBox1.Text);
+                TextBox1.Text = Convert.ToString(Math.Pow(x, 2));
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Введите значение для вычисления", "Information", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+           
         }
     }
 }
